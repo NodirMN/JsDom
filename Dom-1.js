@@ -45,4 +45,3 @@ b.addEventListener('click', function () {
     res.innerHTML = inp.value
 })
 let res = document.getElementById('res')
-////////////
