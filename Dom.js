@@ -39,3 +39,10 @@ console.log(a);
 /////////////// id bo'yicha
 
 let inp = document.getElementById('inp')
+b.addEventListener('click', function () {
+    b.style.backgroundColor = 'red '
+    console.log(inp.value);
+    res.innerHTML = inp.value
+})
+let res = document.getElementById('res')
+////////////
