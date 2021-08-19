@@ -19,4 +19,17 @@ a.innerHTML = '<i>Qo`ng`iroqqa buyurtma berish<i>' // tipa htmlda beradi
 a.classList.add('show')  // class qo'shish
 console.log(a.classList.contains('show')); // tekshirsa bo'laadi show class bormi
 
+////////////atrebutlar
+
+let at = document.querySelector('a')
+console.log(at.getAttribute('href'));
+at.setAttribute('href', 'https://ya.ru')
+
+
+//////event hodisalar bilan ishlash
+
+let b = document.querySelector('.target')
+b.addEventListener('click',function(){
+        console.log('salom');
+})
 console.log(a);
