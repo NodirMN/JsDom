@@ -30,6 +30,12 @@ at.setAttribute('href', 'https://ya.ru')
 
 let b = document.querySelector('.target')
 b.addEventListener('click',function(){
+    b.style.backgroundColor = 'red '
         console.log('salom');
 })
 console.log(a);
+
+
+/////////////// id bo'yicha
+
+let inp = document.getElementById('inp')
