@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Hodimlar ro'yhati</h2>
+    <hr>
+    <div>
+        <label>
+            <b>Ism-shrifi</b><br>
+            <input type="text" id="ism">
+        </label>
+    </div>
+    <div>
+        <label>
+            <b>Tug'ilgan sana</b><hr>
+            <input type="datetime-local" id="day">
+        </label>
+    </div>
+    <div>
+        <b>Jinsi</b><hr>
+        <label>
+            <input type="radio" id="erkak" name='gender' value="erkak">Erkak
+        </label>
+        <label>
+            <input type="radio" id="ayol" name='gender' value="ayol">Ayol
+        </label>
+    </div>
+    <div>
+        <b>Qaysi dasturlash tilini biladi</b><br>
+        <label>
+            <input type="checkbox" value="js" id="js" name="lang">Js
+        </label>
+        <label>
+            <input type="checkbox" value="php" id="php"     name="lang">PHP
+        </label>
+        <label>
+            <input type="checkbox" value="python" id="python" name="lang">Python
+        </label>
+    </div>
+    <div>
+        <label>
+            <b>Qaysi bo'limga ishga kirmoqchi</b><br>
+            <select name="" id="depart">
+                <option value="null"></option>
+                <option value="Veb dasturlash bo'limi">Veb dasturlash bo'limi</option>
+                <option value="Menijment">Menijment</option>
+                <option value="Qo'llab quvatlash bo'limi">Qo'llab quvatlash bo'limi</option>
+            </select>
+        </label>
+    </div>
+    <button onclick='send()'>Tizimga jo`natish</button>
+    <div id='info' style="color: red; display: none;">Maydon to'ldirilmadi</div>
+    <hr>
+    <table border='1' width='100%' cellspacing='0' cellpadding='5'>
+        <thead>
+            <tr>
+                <th>№</th>
+                <th>Ism-sharifi</th>
+                <th>Tug'ilgan sanasi</th>
+                <th>Jinsi</th>
+                <th>Dsturlash tillari</th>
+                <th>Bo'lim</th>
+            </tr>
+        </thead>
+
+    </table>
+            <hr>
+
+    <script src="Dom-3.js"></script>
+</body>
+</html>
